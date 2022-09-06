@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">uicJetpackCompose</string>
+    <string name="conf_name">UIC Dev</string>
+    <string name="theme_name">UI тестирование мобильных приложений от классики до Compose</string>
+    <string name="fragments_button">Уныние на фрагментах</string>
+    <string name="compose_button">Веселье на Jetpack Compose</string>
+    <string name="counter_button">Увеличить счетчик</string>
+    <string name="nextscreen_button">Следующее окно</string>
+    <string name="toast_button">Показать тост</string>
+    <string name="show_dialog_button">Показать диалог</string>
+    <string name="back_button">Назад</string>
+    <string name="toast_msg">Тостик!</string>
+    <string name="dialog_title">Диалог</string>
+    <string name="dialog_text">Неприлично бесполезный текст</string>
+    <string name="dialog_btn">Кнопка</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+    <string name="zero">0</string>
+</resources>
