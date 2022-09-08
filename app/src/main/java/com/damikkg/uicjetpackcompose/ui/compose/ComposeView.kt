@@ -11,6 +11,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.sp
 import com.damikkg.uicjetpackcompose.R
 
@@ -28,10 +30,15 @@ fun ComposeView(
     ) {
         Text(
             text = counter.toString(),
-            fontSize = 32.sp
+            fontSize = 32.sp,
+            modifier = Modifier.semantics {
+                testTag = "counter"
+            }
         )
         Button(onClick = {
             counter++
+        }, modifier = Modifier.semantics {
+            testTag = "counterUpTestTag"
         }) {
             Text(text = stringResource(id = R.string.counter_button),)
         }
